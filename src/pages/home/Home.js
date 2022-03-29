@@ -1,14 +1,17 @@
 import React from 'react'
-import { useState } from 'react';
-import { Link } from "react-router-dom";
-import './Home.css';
+import './Home.scss';
+import "../../pages/Variables.scss"
+
 
 function Home () {
 
     return (
-    <div>
-        <h1>Home</h1>
+    <div className="box">
+        <div className="homepage">
+            <h1>Home</h1>
+        </div>
     </div>
+
     )
 }
 

@@ -1,11 +1,14 @@
 import React from 'react'
-import "./About.css";
+import "./About.scss";
+import "../../pages/Variables.scss"
 
 function About () {
 
     return (
-    <div>
-        <h1>About</h1>
+    <div className="box">
+        <div className="about">
+            <h1>About</h1>
+        </div>
     </div>
     )
 }

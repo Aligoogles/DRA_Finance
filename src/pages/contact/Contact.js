@@ -1,11 +1,14 @@
 import React from 'react'
-import "./Contact.css";
+import "./Contact.scss";
+import "../../pages/Variables.scss"
 
 function Contact () {
 
     return (
-    <div>
-        <h1>Contact</h1>
+        <div className="box">
+        <div className="contact">
+            <h1>Contact</h1>
+        </div>
     </div>
     )
 }

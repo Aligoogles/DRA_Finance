@@ -2,7 +2,8 @@ import React from 'react'
 import {useState} from 'react'
 import { Link } from 'react-router-dom'
 import {Close, MenuOutlined} from '@material-ui/icons'
-import './NavBar.css';
+import './NavBar.scss';
+import img from './LOGO.jpg'
 
 
 function NavBar () {
@@ -16,13 +17,17 @@ function NavBar () {
 
     return (
         <div className="navContainer" >
+            <div className="logo">
+                <img src={img} alt="logo" />
+            </div>
+
 
             <div className="menu-icon">
                 <MenuOutlined className="menu" onClick={showMenu} />
             </div>
 
             <nav className={active ? 'navBar active' : 'navBar' }>
-                <ul >
+                <ul onClick={showMenu}>
 
                     <div className="closed">
                         <Close className="close" onClick={showMenu} />

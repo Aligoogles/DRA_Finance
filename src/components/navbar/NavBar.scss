@@ -1,0 +1,186 @@
+@import "../../pages/Variables.scss";
+
+.navContainer{
+    background-color: $dark;
+    color: $light;
+    overflow: hidden;
+    width: $fullHeight;
+    margin: 0% 0% 6% 0%;
+    padding-right: $spacing-lg;
+    justify-content: space-between;
+    display: flex;
+
+    .logo {
+        margin-left: $spacing-sm;
+        
+        img {
+            height: $height2;
+            width: $width3;
+        }
+    }
+}
+
+.navBar ul {
+    width: $fullHeight;
+    transition: 1s ease;
+    list-style: none;
+    display: flex; 
+    margin-top: $spacing-sm; 
+
+    li {
+        margin-inline: $spacing-sm;
+        margin-block: $spacing-lg;
+
+        a {
+            font-size: $smFont;
+            color: $dark;
+            background-color: $light;
+            text-decoration: none;
+            border: $border1;
+            padding: 10px 25px;
+            font-style: italic;
+            text-align: center;
+        }
+    }
+}
+
+.navBar ul li a:hover {
+    background-color: $dark;
+    border: $border1 $light;
+    color: $light;
+}
+
+.menu-icon {
+    margin-right: -11%;
+    margin-top: 3%;
+}
+.menu-icon .menu {
+    display: none;
+    color:$light;
+    font-size: $exLgFont;
+    cursor: pointer;
+}
+
+.closed {
+    display: none;
+    cursor: pointer;
+    color: $dark;
+    width: $fullHeight;
+    justify-content: flex-start;
+}
+
+@media (max-width: 915px) {
+    
+    .navBar {
+        position: fixed;
+        min-width: $width2;
+        height: 100vh;
+        background-color: $menuBackground;
+        transition: 1s ease;
+        display: flex;
+        flex-direction: column;
+        top: -100%;
+    }
+
+    .navBar.active {
+        top: 0;
+        transition: 1s ease;
+    }
+    
+    .navBar ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        li {
+            margin-block: 7%;
+            list-style: none;
+
+            a {
+                font-size: $mdFont;
+                padding: 5px 30px;
+            }
+        }
+    }
+    
+    .menu-icon .menu {
+        display: block;
+        color: $light;
+        font-size: $exLgFont;
+        cursor: pointer;
+    }
+    
+    .closed {
+        display: flex;
+        cursor: pointer;
+        color: $light;
+        width: $fullWidth;
+        justify-content: flex-start;
+        margin-bottom: 7%;
+
+        .close {
+            font-size: $exLgFont1;
+        }
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .navBar ul {
+        li {
+            margin-left: -20%;
+
+            a {
+                font-size: $mdFont2;
+            }
+        } 
+    }
+    .menu-icon .menu {
+        font-size: $exLgFont;
+    }
+    
+    .closed {
+        margin-left: -20%;
+    }
+    .closed .close {
+        font-size: $exLgFont2;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .navBar ul { 
+        li {
+            margin-left: -12%;
+
+            a {
+                font-size: $smFont1; 
+            }
+        }  
+    }
+
+    .menu-icon .menu {
+        font-size: $exLgFont2;
+    }
+    
+    .closed {
+        margin-left: -12%;
+    }
+
+    .closed .close {
+        font-size: $mdFont1;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .navBar ul li a {
+        font-size: $smFont1;
+    }
+
+    .menu-icon .menu {
+        font-size: $mdFont;
+    } 
+    
+    .closed .close {
+        font-size: $mdFont1;
+    }
+}
