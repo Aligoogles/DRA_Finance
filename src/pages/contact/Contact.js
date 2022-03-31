@@ -8,6 +8,14 @@ function Contact () {
         <div className="box">
         <div className="contact">
             <h1>Contact</h1>
+            <h1>Contact</h1>
+            <h1>Contact</h1>
+            <h1>Contact</h1>
+            <h1>Contact</h1>
+            <h1>Contact</h1>
+            <h1>Contact</h1>
+            <h1>Contact</h1>
+            <h1>Contact</h1>
         </div>
     </div>
     )

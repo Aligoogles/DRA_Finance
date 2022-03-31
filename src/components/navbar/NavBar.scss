@@ -7,8 +7,8 @@
     width: $fullHeight;
     margin: 0% 0% 6% 0%;
     padding-right: $spacing-lg;
-    justify-content: space-between;
     display: flex;
+    justify-content: space-between;
 
     .logo {
         margin-left: $spacing-sm;
@@ -16,7 +16,33 @@
         img {
             height: $height2;
             width: $width3;
+            cursor: pointer;
         }
+    }
+}
+
+.search-bar {
+    margin: 10% 0% 0% 25%; 
+
+    input{
+        padding: 1.5% 10%;
+        margin-right: 2%;
+        color: $dark;
+        background-color: $light;
+    }
+
+    .search-btn {
+        padding: 1.5% 5%;
+        cursor: pointer;
+        color: $dark;
+        background-color: $light;
+        font-weight: $semi-bold;
+    }
+
+    .search-btn:hover {
+        background-color: $dark;
+        border: $border1 $light;
+        color: $light;
     }
 }
 
@@ -28,16 +54,17 @@
     margin-top: $spacing-sm; 
 
     li {
-        margin-inline: $spacing-sm;
-        margin-block: $spacing-lg;
+        margin-inline: $spacing-exSmall;
+        margin-block: $spacing-sm;
 
         a {
-            font-size: $smFont;
+            font-size: $smFont1;
+            font-weight: $semi-bold;
             color: $dark;
             background-color: $light;
             text-decoration: none;
             border: $border1;
-            padding: 10px 25px;
+            padding: 10px 30px;
             font-style: italic;
             text-align: center;
         }
@@ -54,6 +81,7 @@
     margin-right: -11%;
     margin-top: 3%;
 }
+
 .menu-icon .menu {
     display: none;
     color:$light;
@@ -122,13 +150,30 @@
             font-size: $exLgFont1;
         }
     }
-}
 
+    .search-bar {
+        margin: 10% 3% 0% 10%; 
+    
+        input{
+            padding: 3% 5%;
+            margin-right: 3%;
+            font-size: $mdFont2;
+            font-family: $Poppins;
+        }
+    
+        .search-btn {
+            padding: 3% 5%;
+            margin-top: 5%;
+            font-size: $mdFont2;
+            font-family: $Poppins;
+        }
+    }
+}
 
 @media screen and (max-width: 768px) {
     .navBar ul {
         li {
-            margin-left: -20%;
+            margin-left: 0%;
 
             a {
                 font-size: $mdFont2;
@@ -136,21 +181,37 @@
         } 
     }
     .menu-icon .menu {
-        font-size: $exLgFont;
+        font-size: $exLgFont1;
     }
     
     .closed {
-        margin-left: -20%;
+        margin-left: 0%;
     }
     .closed .close {
         font-size: $exLgFont2;
+    }
+
+    .search-bar {
+        margin: 10% 3% 0% 10%; 
+    
+        input{
+            padding: 1.5% 1%;
+            margin-right: 2%;
+            font-size: $smFont;
+        }
+    
+        .search-btn {
+            padding: 1.5% 1%;
+            margin-top: 5%;
+            font-size: $smFont;
+        }
     }
 }
 
 @media screen and (max-width: 540px) {
     .navBar ul { 
         li {
-            margin-left: -12%;
+            margin-left: -10%;
 
             a {
                 font-size: $smFont1; 
@@ -163,11 +224,25 @@
     }
     
     .closed {
-        margin-left: -12%;
+        margin-left: -10%;
     }
 
     .closed .close {
         font-size: $mdFont1;
+    }
+
+    .search-bar {
+        margin: 10% 3% 0% 2%; 
+    
+        input{
+            padding: 1% 2%;
+            margin-right: 2%;
+        }
+    
+        .search-btn {
+            padding: 1% 2%;
+            margin-top: 5%;
+        }
     }
 }
 
@@ -182,5 +257,17 @@
     
     .closed .close {
         font-size: $mdFont1;
+    }
+
+    .search-bar {
+        margin: 10% 18% 0% 5%; 
+    
+        input{
+            font-size: $smFont1;
+        }
+    
+        .search-btn {
+            font-size: $smFont1;
+        }
     }
 }

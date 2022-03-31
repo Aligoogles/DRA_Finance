@@ -1,1 +1,58 @@
 @import "../../pages/Variables.scss";
+
+hr {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.main-footer {
+    background-color: $dark;
+    color: $light;
+    padding-top: $spacing-exSmall;
+    position: relative;
+    bottom: 0;
+    width: $fullWidth;
+    align-items: center;
+
+    .footer-row {
+        display: flex; 
+        flex-direction: row;
+        justify-content: space-between; 
+        margin: 0% 5%;
+    }
+
+    li {
+        list-style: none;
+        font-size: $smFont4;
+        font-weight: $regular;
+        margin: 3% 0%;
+    }
+
+    .footer-col-1 {
+        img {
+            height: $height1;
+            width: $width2;
+            cursor: pointer;
+        }
+    }
+
+    .footer-col-2 li a {
+        text-decoration: underline 1%;
+        font-size: $smFont1;
+        cursor: pointer;
+        color: $light;
+    }
+
+    .footer-col-2 li a:hover {
+        color: $hover;
+    }
+
+    .footer-col-3 li {
+        font-size: $smFont1;
+    }
+
+    .footer-col-small {
+        margin: 1% 0% 1% 42%;
+        font-size: $smFont1;
+    }
+
+}
