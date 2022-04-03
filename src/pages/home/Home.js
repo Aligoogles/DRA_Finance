@@ -1,9 +1,13 @@
-/* created aelita  21113131*/
+/* created Aelita  21113131*/
 import React from 'react'
 import './Home.scss';
 import '../Main-styles.scss'
 import Header from '../../components/header/Header'
 import SliderData from '../../components/header/SliderData'
+import HomeBox2 from '../../components/homepage/HomeBox2'
+import HomeBox3 from '../../components/homepage/HomeBox3'
+import HomeBox4 from '../../components/homepage/HomeBox4'
+import HomeBox5 from '../../components/homepage/HomeBox5'
 
 
 
@@ -18,20 +22,19 @@ function Home () {
             </div>
 
             <div className="home-box-2">
-                <h1>Welcome to DRA_Finance</h1>
-                <p>We're happy to help you find what you are looking for in the Finance sector!</p>
+                <HomeBox2 />
             </div>
 
             <div className="home-box-3">
-                <h1>Home 3</h1>
+                <HomeBox3 />
             </div>
 
             <div className="home-box-4">
-                <h1>Home 4</h1>
+                <HomeBox4 />    
             </div>
 
             <div className="home-box-5">
-                <h1>Home 5</h1>
+                <HomeBox5 />
             </div>
             
         </div>

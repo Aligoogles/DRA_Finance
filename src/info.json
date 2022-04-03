@@ -1,0 +1,33 @@
+
+[
+    {
+        "name": "Welcome to DRA_Finance",
+        "desc": "We are happy to help you find whatever you are looking for in the finance sector."
+    },
+    {
+       "name": "Stock",
+       "subName": "Checkout what are the current rates.",
+       "desc": "Variable rates 6.8% to 8.5% APR1. Loans from €2,000 - €65,000. Loan terms from 1 to 5 years. Clear your loan early and pay less interest"
+    },
+
+    {
+        "name": "Market?",
+        "subName": "Checkout what are the current rates.",
+        "desc": "Variable rates 6.8% to 8.5% APR1. Loans from €2,000 - €65,000. Loan terms from 1 to 5 years. Clear your loan early and pay less interest"
+    },
+   {
+        "name": "Need a Loan in Ireland?",
+        "subName": "Checkout what are the current rates.",
+        "desc": "Variable rates 6.8% to 8.5% APR1. Loans from €2,000 - €65,000. Loan terms from 1 to 5 years. Clear your loan early and pay less interest"
+    },
+    {
+        "name": "About us",
+        "subName": "Checkout what are the current rates.",
+        "desc": "Variable rates 6.8% to 8.5% APR1. Loans from €2,000 - €65,000. Loan terms from 1 to 5 years. Clear your loan early and pay less interest"
+    },
+    {
+        "name": "About us",
+        "subName": "Checkout what are the current rates.",
+        "desc": "Variable rates 6.8% to 8.5% APR1. Loans from €2,000 - €65,000. Loan terms from 1 to 5 years. Clear your loan early and pay less interest"
+    }
+]
