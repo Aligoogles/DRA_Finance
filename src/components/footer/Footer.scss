@@ -1,58 +1,136 @@
+/* Created by Aelita 21113131 */
 @import "../../pages/Variables.scss";
+@import "../../pages/Main-styles.scss";
 
 hr {
     margin-left: 5%;
     margin-right: 5%;
 }
+
 .main-footer {
+    width: $fullWidth;
     background-color: $dark;
     color: $light;
     padding-top: $spacing-exSmall;
     position: relative;
     bottom: 0;
-    width: $fullWidth;
-    align-items: center;
 
     .footer-row {
         display: flex; 
         flex-direction: row;
-        justify-content: space-between; 
-        margin: 0% 5%;
-    }
+       justify-content: space-evenly;
+        margin: 0%;
+        align-items: center;
+        
+        .footer-contact {
+            list-style: none;
+            font-size: $smFont4;
+            font-weight: $regular;
+        }
+ 
+        .footer-col-1 {
 
-    li {
-        list-style: none;
-        font-size: $smFont4;
-        font-weight: $regular;
-        margin: 3% 0%;
-    }
+            img {
+                height: $height1;
+                width: $width2;
+                cursor: pointer;
+            }
+        }
 
-    .footer-col-1 {
-        img {
-            height: $height1;
-            width: $width2;
-            cursor: pointer;
+        .footer-col-2 {
+        
+            li a {
+                text-decoration: underline 1.5%;
+                font-size: $smFont1;
+                cursor: pointer;
+                color: $light;
+            }
+        }
+
+        .footer-col-2 li a:hover {
+            color: $hover;
+        }
+
+        .footer-col-3 li {
+            font-size: $smFont1;
         }
     }
 
-    .footer-col-2 li a {
-        text-decoration: underline 1%;
-        font-size: $smFont1;
-        cursor: pointer;
-        color: $light;
-    }
+    .footer-row-1 {
+        display:flex;
+        justify-content: center;
 
-    .footer-col-2 li a:hover {
-        color: $hover;
+        .footer-col-small {
+            font-size: $smFont1;
+        }
     }
+}
 
-    .footer-col-3 li {
-        font-size: $smFont1;
+@media (max-width: 540px) {
+
+    .main-footer {
+
+        .footer-row {
+
+            .footer-col-1 {
+                img {
+                    height: $height2;
+                    width: $width3;
+                }
+            }
+
+            .footer-col-2 {
+                padding-right: 20%; 
+            
+                li a {
+                    font-size: $smFont3;
+                }
+            }
+
+            .footer-col-3 {
+               margin: 0% 5% 0% 0%;
+
+                li{
+                    font-size: $smFont3; 
+                }
+            }
+        }
+
+        .footer-row-1 {
+
+            .footer-col-small {
+                font-size: $smFont2;
+            }
+        }
     }
+}
 
-    .footer-col-small {
-        margin: 1% 0% 1% 42%;
-        font-size: $smFont1;
+@media (max-width: 380px) {
+
+    .main-footer {
+
+        .footer-row {
+
+            .footer-col-1 {
+                img {
+                    height: $height1;
+                    width: $width1;
+                }
+            }
+
+            .footer-col-2 {
+                padding-right: 5%; 
+            }
+            .footer-col-3 {
+               margin: 0% 2% 0% 0%;
+            }
+        }
+
+        .footer-row-1 {
+
+            .footer-col-small {
+                font-size: $smFont3;
+            }
+        }
     }
-
 }

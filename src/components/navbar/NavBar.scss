@@ -22,10 +22,10 @@
 }
 
 .search-bar {
-    margin: 10% 0% 0% 25%; 
+    margin: 6% 0% 0% 25%; 
 
     input{
-        padding: 1.5% 10%;
+        padding: 1.5% 20% 1.5% 3%;
         margin-right: 2%;
         color: $dark;
         background-color: $light;
@@ -97,6 +97,13 @@
     justify-content: flex-start;
 }
 
+@media (max-width: 1025px) {
+    
+    .search-bar {
+        margin: 4% 0% 0% 30%; 
+    }
+}
+
 @media (max-width: 915px) {
     
     .navBar {
@@ -113,6 +120,7 @@
     .navBar.active {
         top: 0;
         transition: 1s ease;
+        z-index: 11;
     }
     
     .navBar ul {

@@ -1,19 +1,20 @@
+/* created aelita  21113131*/
 @import "../../pages/Variables.scss";
+@import "../Main-styles.scss";
 
 .homepage {
     background-color: $transp;
-    width: 90%;
+    width: 100%;
     height: 100vh;
-    margin: 0% 5% 10% 5%;
 
     .home-box-1 {
-        width: $fullHeight;
+        width: 62%;
         height: $height3;
         display: flex;
         background-color: $light;
-        flex-direction: column;
         align-items: center;
         justify-content: space-around;
+        float: left;
     }
 
     .home-box-2 {
@@ -25,7 +26,19 @@
         flex-direction: column;
         float: left;
         justify-content: space-around;
-        margin: 5% 0%;
+        margin: 6% 0%;
+
+        p {
+            font-size: $smFont;
+            text-align: center;
+            margin-top: -40%;
+            padding: 0% 10% 0% 10%;
+            color: $hover;
+        }
+        h1 {
+            text-align: left;
+            padding: 0% 11% 0% 11%;
+        }
     }
 
     .home-box-3 {
@@ -35,9 +48,9 @@
         background-color: $light;
         align-items: center;
         flex-direction: column;
-        float: left;
+        float: right;
         justify-content: space-around;
-        margin: 5% 8%;
+        margin: 5% 0%;
     }
 
     .home-box-4 {
@@ -49,6 +62,355 @@
         flex-direction: column;
         float: left;
         justify-content: space-around;
-        margin: 5% 0%;
+        margin: 5% 4% 5% 0%;
+    }
+    .home-box-5 {
+        width: 28%;
+        height: $height4;
+        display: flex;
+        background-color: $light;
+        align-items: center;
+        flex-direction: column;
+        float: left;
+        justify-content: space-around;
+        margin: 5% 0% 5% 4%;
+    }
+
+
+    /*home slider - start*/
+    .slider {
+        position: relative;
+        margin: 6%;
+    }
+    .slides_img {
+        width: $fullWidth;
+        height: 480px;
+        border-radius: $border-rad1;
+        object-fit: cover;
+    }
+
+    .right-arrow {
+        position: absolute;
+        top: 50%;
+        right: 0.5%;
+        font-size: $lgFont;
+        color: $hover;
+        z-index: 10;
+        cursor: pointer;
+        user-select: none;
+    }
+    .right-arrow:hover {
+        color: $light;
+    }
+    .left-arrow {
+        position: absolute;
+        top: 50%;
+        left: 0.5%;
+        font-size: $lgFont;
+        color: $hover;
+        z-index: 10;
+        cursor: pointer;
+        user-select: none;
+    }
+    .left-arrow:hover {
+        color: $light;
+    }
+
+    .slide {
+        opacity: 0;
+        transition-duration: 1s ease;
+    }
+    .slide.active {
+        opacity: 1;
+        transition-duration: 1s;
+        transform: scale(1.10);
+    }
+    .slides_title {
+        width: $width2;
+        height: $height3;
+        font-size: $lgFont;
+        position: absolute;
+        z-index: 10;
+        top: 0%;
+        text-align: right;
+        font-style: italic;
+    }
+    /*home slider - end*/
+}
+/* responsive */
+@media (max-width: 1400px) {
+
+    .homepage{
+
+        .home-box-2 {
+            width: 30%;
+            margin: 7% 0%;
+            padding: 0% 1%;
+
+            p {
+                font-size: 18px;
+            }
+
+            h1 {
+                text-align: center;
+            }
+        }
+
+        /*home slider - start*/
+        .slides_img {
+            width: $fullWidth;
+            height: 400px;
+        }
+    }
+}
+
+@media (max-width: 1025px) {
+
+    .homepage{
+        /*home slider - start*/
+        .slides_img {
+            width: $fullWidth;
+            height: 300px;
+        }
+
+        .home-box-2 {
+            width: 35%;
+
+            p {
+                margin-top: 2%;
+            }
+        }
+    }
+}
+@media (max-width: 915px) {
+
+    .homepage{
+
+        .home-box-1 {
+            width: 65%;
+            height: 35%;
+        }
+
+        .home-box-2 {
+            height: 25%;
+            margin: 8% 0%;
+
+            p {
+                margin-top: -28%;
+            }
+            
+            h1{
+                font-size: $mdFont1;
+            }
+        }
+
+        .home-box-3 {
+            width: $width3;
+            height: $height5;
+            margin: 5% 4%;
+                
+            h1{
+                font-size: $mdFont1;
+            }
+        }
+
+        .home-box-4 {
+            width: $width3;
+            height: $height5;
+            margin: 5% 4%;
+
+            h1{
+                font-size: $mdFont1;
+            }
+        }
+
+        .home-box-5 {
+            width: 90%;
+            height: $height5;
+            margin: 5% 4%;
+
+            h1{
+                font-size: $mdFont1;
+            }
+        }
+
+        /*home slider - start*/
+        .slides_img {
+            width: $fullWidth;
+            height: 270px;
+        }
+        .slides_title {
+            font-size: $mdFont;
+        }
+        /*home slider - end*/
+    }
+}
+
+@media (max-width: 768px) {
+
+    .homepage{
+
+        .home-box-2 {
+            height: 25%;
+            margin: 8% 0%;
+
+            p {
+                margin-top: -20%;
+                font-size: $smFont1;
+            }
+            h1 {
+                font-size: $mdFont2;
+            }
+        }
+        /*home slider - start*/
+        .slides_img {
+            height: 230px;
+        }
+        /*home slider - end*/
+    }
+}
+
+@media (max-width: 540px) {
+
+    .homepage{
+
+        .home-box-1 {
+            width: 60%;
+        }
+
+        .home-box-2 {
+            height: 27%;
+            margin: 6% 0%;
+
+            p {
+                margin-top: 0%;
+                font-size: $smFont2;
+            }
+            h1 {
+                font-size: $smFont;
+            }
+        }
+
+        .home-box-3 {
+            width: $width3;
+            height: $height5;
+            margin: 8% 8%;
+
+            h1 {
+                font-size: $smFont;
+            }
+        }
+
+        .home-box-4 {
+            width: $width3;
+            height: $height5;
+            margin: 8% 2%;
+
+            h1 {
+                font-size: $smFont;
+            }
+        }
+
+        .home-box-5 {
+            width: 90%;
+            height: $height5;
+            margin: 5% 2%;
+
+            h1 {
+                font-size: $smFont;
+            }
+        }
+        /*home slider - start*/
+        .slides_img {
+            height: 160px;
+        }
+
+        .slides_title {
+            font-size: $smFont;
+        }
+        .right-arrow {
+            font-size: $mdFont2;
+        }
+
+        .left-arrow {
+            font-size: $mdFont2;
+        }
+        /*home slider - end*/
+    }
+}
+
+@media (max-width: 420px) {
+
+    .homepage{
+        display: flex;
+        flex-direction: column;
+
+        .home-box-1 {
+            width: 90%;
+            height: $height4;
+            margin: 5% 4%;
+        }
+
+        .home-box-2 {
+            width: 90%;
+            height: $height5;
+            margin: 5% 4%;
+
+            p {
+                margin-top: -5%;
+                font-size: $smFont2;
+            }
+            h1 {
+                font-size: $smFont1;
+            }
+        }
+
+        .home-box-3 {
+            width: 90%;
+            height: $height5;
+            margin: 5% 4%;
+
+            h1 {
+                font-size: $smFont1;
+            }
+        }
+
+        .home-box-4 {
+            width: 90%;
+            height: $height5;
+            margin: 5% 4%;
+
+            h1 {
+                font-size: $smFont1;
+            }
+        }
+        .home-box-5 {
+            height: $height5;
+            margin: 5% 4%;
+
+            h1 {
+                font-size: $smFont1;
+            }
+ 
+        }
+        /*home slider - start*/
+        .slides_title {
+            font-size: $smFont1;
+        }
+        /*home slider - end*/
+    }
+}
+
+@media (max-width: 380px) {
+
+    .homepage{
+
+        .home-box-2 {
+
+            p {
+                margin-top: 0%;
+                font-size: $smFont3;
+            }
+        }
     }
 }

@@ -55,7 +55,7 @@ function NavBar () {
                 </ul>
 
                 <div className="search-bar" >
-                    <input  type="text" value={""}  />
+                    <input  type="text" value={""} placeholder="Start your search..." />
 
                     <Link to="/" >
                     <button className="search-btn"> search</button>
