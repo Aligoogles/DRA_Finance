@@ -10,14 +10,14 @@ html {
 }
 
 body {
-  font-family: $Poppins;
-  margin: 0%;
+  font-family: $font;
+  margin: $m0;
   padding: 0%;
   background-image: url(../images/background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
-  width: 100%;
+  width: $percent100;
 }
 
 .page-container {

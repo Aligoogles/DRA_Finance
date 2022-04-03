@@ -1,117 +1,132 @@
+
+/* created aelita  21113131*/
+
 @import "../../pages/Variables.scss";
+@import "../../pages/Main-styles.scss";
 
-.navContainer{
-    background-color: $dark;
-    color: $light;
-    overflow: hidden;
-    width: $fullHeight;
-    margin: 0% 0% 6% 0%;
-    padding-right: $spacing-lg;
-    display: flex;
-    justify-content: space-between;
 
-    .logo {
-        margin-left: $spacing-sm;
-        
-        img {
-            height: $height2;
-            width: $width3;
-            cursor: pointer;
+
+@media (max-width: $screen3000) {
+    .navContainer{
+        background-color: $dark;
+        color: $light;
+        overflow: hidden;
+        width: $percent100;
+        margin: $m0 $m0 $m6 $m0;
+        padding-right: $spacing15;
+        display: flex;
+        justify-content: space-between;
+    
+        .logo {
+            margin-left: $m5;
+            
+            img {
+                height: $percent75;
+                width: $percent40;
+                cursor: pointer;
+            }
         }
     }
-}
-
-.search-bar {
-    margin: 6% 0% 0% 25%; 
-
-    input{
-        padding: 1.5% 20% 1.5% 3%;
-        margin-right: 2%;
-        color: $dark;
-        background-color: $light;
+    
+    .search-bar {
+        margin: $m2 $m0 $m0 30%; 
+    
+        input{
+            padding: $m2 $m20 $m2 $m4;
+            margin-right: $m2;
+            color: $dark;
+            background-color: $light;
+        }
+    
+        .search-btn {
+            padding: $m2 $m5;
+            cursor: pointer;
+            color: $dark;
+            background-color: $light;
+            font-weight: $semi-bold;
+        }
+    
+        .search-btn:hover {
+            background-color: $dark;
+            border: $border1 $light;
+            color: $light;
+        }
     }
-
-    .search-btn {
-        padding: 1.5% 5%;
-        cursor: pointer;
-        color: $dark;
-        background-color: $light;
-        font-weight: $semi-bold;
+    
+    .navBar ul {
+        width: $percent100;
+        transition: $trans1;
+        list-style: none;
+        display: flex; 
+        margin-top: $spacing5; 
+    
+        li {
+            margin-inline: $spacing2;
+            margin-block: $spacing5;
+    
+            a {
+                font-size: $font20;
+                font-weight: $semi-bold;
+                color: $dark;
+                background-color: $light;
+                text-decoration: none;
+                border: $border1;
+                padding: 10px 30px;
+                font-style: italic;
+                text-align: center;
+            }
+        }
     }
-
-    .search-btn:hover {
+    
+    .navBar ul li a:hover {
         background-color: $dark;
         border: $border1 $light;
         color: $light;
     }
+    
+    .menu-icon {
+        margin-right: -11%;
+        margin-top: 3%;
+    }
+    
+    .menu-icon .menu {
+        display: none;
+        color:$light;
+        font-size: $font50;
+        cursor: pointer;
+    }
+    
+    .closed {
+        display: none;
+        cursor: pointer;
+        color: $dark;
+        width: $percent100;
+        justify-content: flex-start;
+    }
 }
-
-.navBar ul {
-    width: $fullHeight;
-    transition: 1s ease;
-    list-style: none;
-    display: flex; 
-    margin-top: $spacing-sm; 
-
-    li {
-        margin-inline: $spacing-exSmall;
-        margin-block: $spacing-sm;
-
-        a {
-            font-size: $smFont1;
-            font-weight: $semi-bold;
-            color: $dark;
-            background-color: $light;
-            text-decoration: none;
-            border: $border1;
-            padding: 10px 30px;
-            font-style: italic;
-            text-align: center;
+@media (max-width: $screen1025) {
+    .search-bar {
+        margin: $m0 $m0 $m2 30%;
+    }
+    .navBar ul {
+    
+        li {
+    
+            a {
+                font-size: $font15;
+            }
         }
     }
 }
 
-.navBar ul li a:hover {
-    background-color: $dark;
-    border: $border1 $light;
-    color: $light;
-}
-
-.menu-icon {
-    margin-right: -11%;
-    margin-top: 3%;
-}
-
-.menu-icon .menu {
-    display: none;
-    color:$light;
-    font-size: $exLgFont;
-    cursor: pointer;
-}
-
-.closed {
-    display: none;
-    cursor: pointer;
-    color: $dark;
-    width: $fullHeight;
-    justify-content: flex-start;
-}
-
-@media (max-width: 1025px) {
-    
-    .search-bar {
-        margin: 4% 0% 0% 30%; 
-    }
-}
-
-@media (max-width: 915px) {
+@media (max-width: $screen915) {
     
     .navBar {
         position: fixed;
-        min-width: $width2;
+        min-width: $percent50;
         height: 100vh;
         background-color: $menuBackground;
-        transition: 1s ease;
+        transition: $trans1;
         display: flex;
         flex-direction: column;
         top: -100%;
@@ -119,7 +134,7 @@
 
     .navBar.active {
         top: 0;
-        transition: 1s ease;
+        transition: $trans1;
         z-index: 11;
     }
     
@@ -133,7 +148,7 @@
             list-style: none;
 
             a {
-                font-size: $mdFont;
+                font-size: $font35;
                 padding: 5px 30px;
             }
         }
@@ -142,7 +157,7 @@
     .menu-icon .menu {
         display: block;
         color: $light;
-        font-size: $exLgFont;
+        font-size: $font50;
         cursor: pointer;
     }
     
@@ -150,85 +165,79 @@
         display: flex;
         cursor: pointer;
         color: $light;
-        width: $fullWidth;
+        width: $percent100;
         justify-content: flex-start;
         margin-bottom: 7%;
 
         .close {
-            font-size: $exLgFont1;
+            font-size: $font50;
         }
     }
 
     .search-bar {
-        margin: 10% 3% 0% 10%; 
+        margin: $m10 3% $m0 $m10; 
     
         input{
             padding: 3% 5%;
             margin-right: 3%;
-            font-size: $mdFont2;
-            font-family: $Poppins;
+            font-size: $font25;
         }
     
         .search-btn {
             padding: 3% 5%;
-            margin-top: 5%;
-            font-size: $mdFont2;
-            font-family: $Poppins;
+            margin-top: $m5;
+            font-size: $font25;
         }
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: $screen786) {
     .navBar ul {
         li {
-            margin-left: 0%;
-
-            a {
-                font-size: $mdFont2;
-            }
+            margin-left: $m0;
         } 
     }
     .menu-icon .menu {
-        font-size: $exLgFont1;
+        font-size: $font50;
     }
     
     .closed {
-        margin-left: 0%;
+        margin-left: $m0;
     }
     .closed .close {
-        font-size: $exLgFont2;
+        font-size: $font50;
     }
 
     .search-bar {
-        margin: 10% 3% 0% 10%; 
+        margin: $m10 3% $m0 $m10; 
     
         input{
             padding: 1.5% 1%;
-            margin-right: 2%;
-            font-size: $smFont;
+            margin-right: $m2;
+            font-size: $font20;
         }
     
         .search-btn {
             padding: 1.5% 1%;
-            margin-top: 5%;
-            font-size: $smFont;
+            margin-top: $m5;
+            font-size: $font20;
         }
     }
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: $screen540) {
     .navBar ul { 
         li {
             margin-left: -10%;
 
             a {
-                font-size: $smFont1; 
+                font-size: $font15; 
             }
         }  
     }
 
     .menu-icon .menu {
-        font-size: $exLgFont2;
+        font-size: $font50;
     }
     
     .closed {
@@ -236,46 +245,46 @@
     }
 
     .closed .close {
-        font-size: $mdFont1;
+        font-size: $font30;
     }
 
     .search-bar {
-        margin: 10% 3% 0% 2%; 
+        margin: $m10 3% $m0 $m2; 
     
         input{
             padding: 1% 2%;
-            margin-right: 2%;
+            margin-right: $m2;
         }
     
         .search-btn {
             padding: 1% 2%;
-            margin-top: 5%;
+            margin-top: $m5;
         }
     }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: $screen380) {
     .navBar ul li a {
-        font-size: $smFont1;
+        font-size: $font15;
     }
 
     .menu-icon .menu {
-        font-size: $mdFont;
+        font-size: $font35;
     } 
     
     .closed .close {
-        font-size: $mdFont1;
+        font-size: $font30;
     }
 
     .search-bar {
-        margin: 10% 18% 0% 5%; 
+        margin: $m10 18% $m0 $m5; 
     
         input{
-            font-size: $smFont1;
+            font-size: $font15;
         }
     
         .search-btn {
-            font-size: $smFont1;
+            font-size: $font15;
         }
     }
 }

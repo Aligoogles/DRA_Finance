@@ -1,3 +1,4 @@
+/* created aelita  21113131*/
 import React from 'react'
 import './Home.scss';
 import '../Main-styles.scss'

@@ -3,15 +3,15 @@
 @import "../../pages/Main-styles.scss";
 
 hr {
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: $m5;
+    margin-right: $m5;
 }
 
 .main-footer {
-    width: $fullWidth;
+    width: $percent100;
     background-color: $dark;
     color: $light;
-    padding-top: $spacing-exSmall;
+    padding-top: $spacing2;
     position: relative;
     bottom: 0;
 
@@ -19,20 +19,20 @@ hr {
         display: flex; 
         flex-direction: row;
        justify-content: space-evenly;
-        margin: 0%;
+        margin: $m0;
         align-items: center;
         
         .footer-contact {
             list-style: none;
-            font-size: $smFont4;
+            font-size: $font18;
             font-weight: $regular;
         }
  
         .footer-col-1 {
 
             img {
-                height: $height1;
-                width: $width2;
+                height: 80%;
+                width: $percent50;
                 cursor: pointer;
             }
         }
@@ -41,7 +41,7 @@ hr {
         
             li a {
                 text-decoration: underline 1.5%;
-                font-size: $smFont1;
+                font-size: $font15;
                 cursor: pointer;
                 color: $light;
             }
@@ -52,7 +52,7 @@ hr {
         }
 
         .footer-col-3 li {
-            font-size: $smFont1;
+            font-size: $font15;
         }
     }
 
@@ -61,12 +61,12 @@ hr {
         justify-content: center;
 
         .footer-col-small {
-            font-size: $smFont1;
+            font-size: $font15;
         }
     }
 }
 
-@media (max-width: 540px) {
+@media (max-width: $screen540) {
 
     .main-footer {
 
@@ -74,8 +74,8 @@ hr {
 
             .footer-col-1 {
                 img {
-                    height: $height2;
-                    width: $width3;
+                    height: $percent75;
+                    width: $percent40;
                 }
             }
 
@@ -83,15 +83,15 @@ hr {
                 padding-right: 20%; 
             
                 li a {
-                    font-size: $smFont3;
+                    font-size: $font10;
                 }
             }
 
             .footer-col-3 {
-               margin: 0% 5% 0% 0%;
+               margin: $m0 $m5 $m0 $m0;
 
                 li{
-                    font-size: $smFont3; 
+                    font-size: $font10; 
                 }
             }
         }
@@ -99,13 +99,13 @@ hr {
         .footer-row-1 {
 
             .footer-col-small {
-                font-size: $smFont2;
+                font-size: $font12;
             }
         }
     }
 }
 
-@media (max-width: 380px) {
+@media (max-width: $screen380) {
 
     .main-footer {
 
@@ -113,8 +113,8 @@ hr {
 
             .footer-col-1 {
                 img {
-                    height: $height1;
-                    width: $width1;
+                    height: $percent50;
+                    width: $percent50;
                 }
             }
 
@@ -122,14 +122,14 @@ hr {
                 padding-right: 5%; 
             }
             .footer-col-3 {
-               margin: 0% 2% 0% 0%;
+               margin: $m0 $m2 $m0 $m0;
             }
         }
 
         .footer-row-1 {
 
             .footer-col-small {
-                font-size: $smFont3;
+                font-size: $font10;
             }
         }
     }

@@ -1,3 +1,4 @@
+/* created aelita  21113131*/
 
 const SliderData = [
     {

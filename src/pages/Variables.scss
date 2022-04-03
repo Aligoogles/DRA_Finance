@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,300;1,400;1,500;1,600;1,700&family=Roboto&display=swap');
 // font
-$Poppins: 'Poppins' , sans-serif;
+$font: 'Helvetica', sans-serif;
 
 // font weight
 $light: 300;
@@ -10,53 +9,70 @@ $semi-bold: 600;
 $bold: 700;
 
 // font size
-$exLgFont: 80px;
-$exLgFont1: 60px;
-$exLgFont2: 50px;
-$lgFont: 40px;
-$mdFont: 35px;
-$mdFont1: 30px;
-$mdFont2: 25px;
-$smFont: 20px;
-$smFont1: 15px;
-$smFont2: 12px;
-$smFont3: 10px;
-$smFont4: 18px;
+$font50: 50px;
+$font35: 35px;
+$font30: 30px;
+$font28: 28px;
+$font25: 25px;
+$font20: 20px;
+$font18: 18px;
+$font15: 15px;
+$font12: 12px;
+$font10: 10px;
+
 
 // colors
 $dark: #000000;
 $light: #ffffff;
-$primary: rgb(1, 7, 39);
 $menuBackground: rgb(50, 53, 70);
 $transp: #ffffff00;
 $hover: rgb(13, 173, 13);
 
 //borders
 $border1: 1px solid;
+$border2: 2px solid;
 
 // border radius
 $border-rad1: 20px;
+$border-rad2: 10px;
 
-// height
-$fullHeight: 100%;
-$height1: 80%;
-$height2: 75%;
-$height3: 70%;
-$height4: 50%;
-$height5: 20%;
-
-// width
-$fullWidth: 100%;
-$width1: 80%;
-$width2: 50%;
-$width3: 40%;
-$width4: 35%;
-$width5: 20%;
+// height && width
+$percent100: 100%;
+$percent90: 90%;
+$percent75: 75%;
+$percent60: 60%;
+$percent50: 50%;
+$percent40: 40%;
+$percent30: 30%;
+$percent20: 20%;
 
 // spacing
-$spacing-exLg: 20%;
-$spacing-lg: 15%;
-$spacing-md: 10%;
-$spacing-sm: 5%;
-$spacing-exSmall: 2%;
+$spacing20p: 20%;
+$spacing15: 15%;
+$spacing10: 10%;
+$spacing5: 5%;
+$spacing2: 2%;
 
+//margins
+$m20:20%;
+$m10: 10%;
+$m8: 8%;
+$m6: 6%;
+$m5: 5%;
+$m4: 4%;
+$m2: 2%;
+$m0: 0%;
+
+//screen sizes
+$screen3000: 3000px;
+$screen1400: 1400px;
+$screen1025: 1025px;
+$screen915: 915px;
+$screen786: 786px;
+$screen540: 540px;
+$screen420: 420px;
+$screen380: 380px;
+
+//animation
+$trans1: 1s ease;
+$trans-scale: scale(1.1);

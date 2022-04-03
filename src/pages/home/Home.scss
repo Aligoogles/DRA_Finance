@@ -4,12 +4,12 @@
 
 .homepage {
     background-color: $transp;
-    width: 100%;
+    width: $percent100;
     height: 100vh;
 
     .home-box-1 {
         width: 62%;
-        height: $height3;
+        height: 70%;
         display: flex;
         background-color: $light;
         align-items: center;
@@ -19,71 +19,70 @@
 
     .home-box-2 {
         width: 28%;
-        height: $height4;
+        height: $percent50;
         display: flex;
         background-color: $light;
         align-items: center;
         flex-direction: column;
         float: left;
         justify-content: space-around;
-        margin: 6% 0%;
+        margin: $m6 $m0;
 
         p {
-            font-size: $smFont;
             text-align: center;
             margin-top: -40%;
-            padding: 0% 10% 0% 10%;
+            padding: $m0 $m10 $m0 $m10;
             color: $hover;
         }
         h1 {
             text-align: left;
-            padding: 0% 11% 0% 11%;
+            padding: $m0 11% $m0 11%;
         }
     }
 
     .home-box-3 {
         width: 28%;
-        height: $height4;
+        height: $percent50;
         display: flex;
         background-color: $light;
         align-items: center;
         flex-direction: column;
         float: right;
         justify-content: space-around;
-        margin: 5% 0%;
+        margin: $m5 $m0;
     }
 
     .home-box-4 {
         width: 28%;
-        height: $height4;
+        height: $percent50;
         display: flex;
         background-color: $light;
         align-items: center;
         flex-direction: column;
         float: left;
         justify-content: space-around;
-        margin: 5% 4% 5% 0%;
+        margin: $m5 $m4 $m5 $m0;
     }
     .home-box-5 {
         width: 28%;
-        height: $height4;
+        height: $percent50;
         display: flex;
         background-color: $light;
         align-items: center;
         flex-direction: column;
         float: left;
         justify-content: space-around;
-        margin: 5% 0% 5% 4%;
+        margin: $m5 $m0 $m5 $m4;
     }
 
 
     /*home slider - start*/
     .slider {
         position: relative;
-        margin: 6%;
+        margin: $m6;
     }
     .slides_img {
-        width: $fullWidth;
+        width: $percent100;
         height: 480px;
         border-radius: $border-rad1;
         object-fit: cover;
@@ -91,9 +90,9 @@
 
     .right-arrow {
         position: absolute;
-        top: 50%;
+        top: $percent50;
         right: 0.5%;
-        font-size: $lgFont;
+        font-size: 40px;
         color: $hover;
         z-index: 10;
         cursor: pointer;
@@ -104,9 +103,9 @@
     }
     .left-arrow {
         position: absolute;
-        top: 50%;
+        top: $percent50;
         left: 0.5%;
-        font-size: $lgFont;
+        font-size: 40px;
         color: $hover;
         z-index: 10;
         cursor: pointer;
@@ -118,38 +117,34 @@
 
     .slide {
         opacity: 0;
-        transition-duration: 1s ease;
+        transition-duration: $trans1;
     }
     .slide.active {
         opacity: 1;
         transition-duration: 1s;
-        transform: scale(1.10);
+        transform: $trans-scale;
     }
     .slides_title {
-        width: $width2;
-        height: $height3;
-        font-size: $lgFont;
+        width: $percent50;
+        height: $percent40;
+        font-size: 40px;
         position: absolute;
         z-index: 10;
-        top: 0%;
+        top: $m0;
         text-align: right;
         font-style: italic;
     }
     /*home slider - end*/
 }
 /* responsive */
-@media (max-width: 1400px) {
+@media (max-width: $screen1400) {
 
     .homepage{
 
         .home-box-2 {
-            width: 30%;
-            margin: 7% 0%;
-            padding: 0% 1%;
-
-            p {
-                font-size: 18px;
-            }
+            width: $percent30;
+            margin: 7% $m0;
+            padding: $m0 1%;
 
             h1 {
                 text-align: center;
@@ -158,18 +153,18 @@
 
         /*home slider - start*/
         .slides_img {
-            width: $fullWidth;
+            width: $percent100;
             height: 400px;
         }
     }
 }
 
-@media (max-width: 1025px) {
+@media (max-width: $screen1025) {
 
     .homepage{
         /*home slider - start*/
         .slides_img {
-            width: $fullWidth;
+            width: $percent100;
             height: 300px;
         }
 
@@ -177,12 +172,12 @@
             width: 35%;
 
             p {
-                margin-top: 2%;
+                margin-top: $m2;
             }
         }
     }
 }
-@media (max-width: 915px) {
+@media (max-width: $screen915) {
 
     .homepage{
 
@@ -193,73 +188,53 @@
 
         .home-box-2 {
             height: 25%;
-            margin: 8% 0%;
+            margin: $m8 $m0;
 
             p {
                 margin-top: -28%;
             }
-            
-            h1{
-                font-size: $mdFont1;
-            }
         }
 
         .home-box-3 {
-            width: $width3;
-            height: $height5;
-            margin: 5% 4%;
-                
-            h1{
-                font-size: $mdFont1;
-            }
+            width: $percent40;
+            height: $percent20;
+            margin: $m5 $m4;
         }
 
         .home-box-4 {
-            width: $width3;
-            height: $height5;
-            margin: 5% 4%;
-
-            h1{
-                font-size: $mdFont1;
-            }
+            width: $percent40;
+            height: $percent20;
+            margin: $m5 $m4;
         }
 
         .home-box-5 {
-            width: 90%;
-            height: $height5;
-            margin: 5% 4%;
-
-            h1{
-                font-size: $mdFont1;
-            }
+            width: $percent90;
+            height: $percent20;
+            margin: $m5 $m4;
         }
 
         /*home slider - start*/
         .slides_img {
-            width: $fullWidth;
+            width: $percent100;
             height: 270px;
         }
         .slides_title {
-            font-size: $mdFont;
+            font-size: $font35;
         }
         /*home slider - end*/
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: $screen786) {
 
     .homepage{
 
         .home-box-2 {
             height: 25%;
-            margin: 8% 0%;
+            margin: $m6 $m0;
 
             p {
                 margin-top: -20%;
-                font-size: $smFont1;
-            }
-            h1 {
-                font-size: $mdFont2;
             }
         }
         /*home slider - start*/
@@ -270,55 +245,33 @@
     }
 }
 
-@media (max-width: 540px) {
+@media (max-width: $screen540) {
 
     .homepage{
 
         .home-box-1 {
-            width: 60%;
+            width: $percent60;
         }
 
         .home-box-2 {
             height: 27%;
-            margin: 6% 0%;
+            margin: $m6 $m0;
 
             p {
-                margin-top: 0%;
-                font-size: $smFont2;
-            }
-            h1 {
-                font-size: $smFont;
+                margin-top: $m0;
             }
         }
 
         .home-box-3 {
-            width: $width3;
-            height: $height5;
-            margin: 8% 8%;
-
-            h1 {
-                font-size: $smFont;
-            }
+            margin: $m8 $m8;
         }
 
         .home-box-4 {
-            width: $width3;
-            height: $height5;
-            margin: 8% 2%;
-
-            h1 {
-                font-size: $smFont;
-            }
+            margin: $m8 $m2;
         }
 
         .home-box-5 {
-            width: 90%;
-            height: $height5;
-            margin: 5% 2%;
-
-            h1 {
-                font-size: $smFont;
-            }
+            margin: $m5 $m2;
         }
         /*home slider - start*/
         .slides_img {
@@ -326,90 +279,69 @@
         }
 
         .slides_title {
-            font-size: $smFont;
+            font-size: $font20;
         }
         .right-arrow {
-            font-size: $mdFont2;
+            font-size: $font25;
         }
 
         .left-arrow {
-            font-size: $mdFont2;
+            font-size: $font25;
         }
         /*home slider - end*/
     }
 }
 
-@media (max-width: 420px) {
+@media (max-width: $screen420) {
 
     .homepage{
         display: flex;
         flex-direction: column;
 
         .home-box-1 {
-            width: 90%;
-            height: $height4;
-            margin: 5% 4%;
+            width: $percent90;
+            height: $percent50;
+            margin: $m5 $m4;
         }
 
         .home-box-2 {
-            width: 90%;
-            height: $height5;
-            margin: 5% 4%;
+            width: $percent90;
+            height: $percent20;
+            margin: $m5 $m4;
 
             p {
                 margin-top: -5%;
-                font-size: $smFont2;
-            }
-            h1 {
-                font-size: $smFont1;
             }
         }
 
         .home-box-3 {
-            width: 90%;
-            height: $height5;
-            margin: 5% 4%;
-
-            h1 {
-                font-size: $smFont1;
-            }
+            width: $percent90;
+            margin: $m5 $m4;
         }
 
         .home-box-4 {
-            width: 90%;
-            height: $height5;
-            margin: 5% 4%;
-
-            h1 {
-                font-size: $smFont1;
-            }
+            width: $percent90;
+            margin: $m5 $m4;
         }
         .home-box-5 {
-            height: $height5;
-            margin: 5% 4%;
-
-            h1 {
-                font-size: $smFont1;
-            }
- 
+            margin: $m5 $m4;
         }
         /*home slider - start*/
         .slides_title {
-            font-size: $smFont1;
+            font-size: $font15;
         }
         /*home slider - end*/
     }
 }
 
-@media (max-width: 380px) {
+@media (max-width: $screen380) {
 
     .homepage{
 
         .home-box-2 {
 
             p {
-                margin-top: 0%;
-                font-size: $smFont3;
+                margin-top: $m0;
             }
         }
     }
