@@ -3,6 +3,7 @@
 import { Link } from 'react-router-dom'
 import React from 'react'
 import img from './DRA_Logo_small.webp'
+import './Footer.scss';
 
 function Footer () {
 

@@ -6,11 +6,16 @@
 
 @media screen and (min-width: 916px) {
     p {
-        font-size: $font18;
+        font-size: $font20;
     }
 
     a {
-        font-size: $font30;
+        font-size: $font20;
+        text-decoration: none;
+        color: $dark;
+    }
+    a:hover {
+        color: $hover;
     }
 
     h1 {
@@ -28,8 +33,16 @@
 
 @media screen and (max-width: $screen915) {
 
+    p {
+        font-size: $font18;
+    }
     a {
-        font-size: $font28;
+        font-size: $font20;
+        text-decoration: none;
+        color: $dark;
+    }
+    a:hover {
+        color: $hover;
     }
 
     h1 {

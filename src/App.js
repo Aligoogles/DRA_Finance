@@ -1,6 +1,5 @@
 import React from 'react'
 import './index.scss';
-import './components/footer/Footer.scss';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import NavBar from './components/navbar/NavBar'
 import Footer from './components/footer/Footer'

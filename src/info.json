@@ -18,7 +18,19 @@
    {
         "name": "Need a Loan in Ireland?",
         "subName": "Checkout what are the current rates.",
-        "desc": "Variable rates 6.8% to 8.5% APR1. Loans from €2,000 - €65,000. Loan terms from 1 to 5 years. Clear your loan early and pay less interest"
+        "desc": "Variable rates 6.8% to 8.5% APR1. Loans from €2,000 - €65,000. Loan terms from 1 to 5 years. Clear your loan early and pay less interest",
+        "desc1": " Other personal Loan interest rates provided by different banks are as follows",
+        "desc2": [
+            "Avant Money 6.1%",
+            "KBC 6.3%",
+            "BOI 6.8%",
+            "Ulster Bank 7.9%",
+            "Chill Money 8.9%",
+            "AIB 9%",
+            "PTSB 10.5%",
+            "Revolute 5.9%",
+            "An Post 5.9%"
+        ]
     },
     {
         "name": "About us",
