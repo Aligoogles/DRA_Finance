@@ -1,0 +1,23 @@
+/* created Ross  21132305 */
+@import "../../pages/Variables.scss";
+@import "../Main-styles.scss";
+
+.about-box-1 {
+    width: 62%;
+    height: 70%;
+    display: flex;
+    background-color: $light;
+    align-items: center;
+    justify-content: space-around;
+    float: left;
+}
+
+.about-box-2 {
+    width: 62%;
+    height: 70%;
+    display: flex;
+    background-color: $light;
+    align-items: center;
+    justify-content: space-around;
+    float: left;
+}
