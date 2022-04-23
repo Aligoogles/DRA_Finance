@@ -42,12 +42,17 @@
     },
     {
         "name": "About us",
-        "subName": "Checkout what are the current rates.",
-        "desc": "Variable rates 6.8% to 8.5% APR1. Loans from €2,000 - €65,000. Loan terms from 1 to 5 years. Clear your loan early and pay less interest"
+        "subName": "Meet the Team",
+        "desc": "DRA_Finance was created by Aelita Kukusilina, Daniel Matias and Ross Fitzgerald in 2022. We are a team of people who strive to help people keep up to date with the current news in the financial markets.",
+        "desc1": "Aelita, one of the shareholders of DRA Finance, has a background in the financial market sector with a master's degree. She has worked for some of the top companies in the world bringing her experience to DRA_Finance.",
+        "desc2": "Daniel, our other shareholder, has many years experience working in the financial sector as a stock broker. With the knowledge that he provides, along with Aelita, we have been condisered one of the top financial staff start up comapnies of 2022.",
+        "desc3": "Ross has a Postgraduate degree in business and finance. He has worked as a financial advisor to the public in banks across Europe. With his knowledge and experience from these positions, he decided to set up DRA_Finance as he wanted to help those who wanted to gain information about the current news in the financial sector. "
     },
     {
-        "name": "About us",
-        "subName": "Checkout what are the current rates.",
-        "desc": "Variable rates 6.8% to 8.5% APR1. Loans from €2,000 - €65,000. Loan terms from 1 to 5 years. Clear your loan early and pay less interest"
+        "subName": "What We Do As A Company",
+        "desc": "DRA_Finance allows potential investors to keep up to date with the latest financial news around the world. It will bring you to different news sites with examples such as dailyfx.com or forexlive.com. Examples include USD prices compared to EUR, cryptocurrency and stock markets such as the FTSE, Dow Jones and Nasdaq.",
+        "desc1": "Compared to traditional financial services that typically require customers or employees to filter and traverse data systems, DRA_Finance provides the same services in a more efficient and cost-effective way.",
+        "desc2": "With DRA_Finance, the investors who visit this site can also fill out a contact form for Aelita, Daniel or Ross to get in touch with them with any queries they have about the finacial sector."
+
     }
 ]

@@ -4,9 +4,9 @@ import React from 'react'
 import Details from '../../components/homepage/Details'
 import data from '../../info.json';
 
-function InfoAbout () {
+function InfoAbout2 () {
 
-    const aboutinfo = data[6]
+    const aboutinfo = data[7]
 
     return (
         <div className="ross">
@@ -15,4 +15,4 @@ function InfoAbout () {
     )
 }
 
-export default InfoAbout;
+export default InfoAbout2;
