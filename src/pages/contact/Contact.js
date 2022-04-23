@@ -14,7 +14,7 @@ function Contact() {
         <div className="box">
             <div className="contact">
                 <div className="form">
-                    <h1 className="contactH1"> Contact Us </h1>
+                    <h1 className="contact-h1"> Contact Us </h1>
                     <form onSubmit={handleSubmit}>
                     <fieldset>
                         <label>
@@ -23,19 +23,19 @@ function Contact() {
                         </label>
                         <br />
                         <label>
-                                Email:
-                                <input type="email"  className="userEmail" placeholder="Email Address*"></input>
+                            Email:
+                            <input type="email"  className="userEmail" placeholder="Email Address*"></input>
                         </label>
                         <br />
                         <label>
-                                Number:
-                                <input type="tel"  className="telNo" placeholder="Telephone Number*"></input>
+                            Number:
+                            <input type="tel"  className="telNo" placeholder="Telephone Number*"></input>
                         </label>
                         <br />
                         <label>
-                                Message:
-                        <br />
-                                <input type="textbox" placeholder="Enter details here..."></input>
+                            Message:
+                            <br />
+                            <textarea className="textbox" type="text" placeholder="Enter message here..."></textarea>
                         </label>
                     </fieldset>
                         <br />

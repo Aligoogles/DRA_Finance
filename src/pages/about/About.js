@@ -6,6 +6,7 @@ import "../../pages/Variables.scss";
 import "../Main-styles.scss";
 import img1 from "../about/images/about1.jpg"
 import img2 from "../about/images/about2.jpg"
+import img3 from "../about/images/about3.jpg"
 import InfoAbout from '../../components/infoabout/InfoAbout';
 import InfoAbout2 from '../../components/infoabout/InfoAbout2';
 
@@ -18,9 +19,11 @@ function About () {
                 <InfoAbout />
             </div> 
             <br />
-            <div>
-                <img src={img1} className="aboutImg" alt="Staff" />
-                <img src={img2} className="aboutImg" alt="Financial news on a newspaper" />
+            <div className="container">
+                <img src={img1} className="img-about" alt="Staff"/>
+                <img src={img2} className="img-about" alt="Newspaper"/>
+                <img src={img3} className="img-about" alt="Laptop with image of a chart"/>
+
             </div>
             <br />
             <div className="about-box-2">
