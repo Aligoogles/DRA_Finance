@@ -37,11 +37,21 @@
             text-align: center;
             padding: $m0 11% $m0 11%;
         }
+        .link-btn {
+            color: $light;
+            background-color: $dark;
+            padding: 5px 10px;
+            transition: 0.5s ease-in-out;
+        }
+        .link-btn:hover {
+            color: $hover;
+            transform: scale(1.1);
+        }
     }
 
     .home-box-3 {
         width: 28%;
-        height: 80vh;
+        min-height: 80vh;
         display: flex;
         background-color: $light;
         align-items: center;
@@ -69,7 +79,7 @@
 
     .home-box-4 {
         width: 28%;
-        height: 80vh;
+        min-height: 80vh;
         display: flex;
         background-color: $light;
         align-items: center;
@@ -105,7 +115,7 @@
 
     .home-box-5 {
         width: 28%;
-        height: 80vh;
+        min-height: 80vh;
         display: flex;
         background-color: $light;
         align-items: center;
@@ -245,19 +255,19 @@
 
         .home-box-3 {
             width: $percent40;
-            height: 50vh;
+            min-height: 50vh;
             margin: $m5 $m4;
         }
 
         .home-box-4 {
             width: $percent40;
-            height: 50vh;
+            min-height: 50vh;
             margin: $m5 $m4;
         }
 
         .home-box-5 {
             width: $percent90;
-            height: 20vh;
+            min-height: 20vh;
             margin: $m5 $m4;
         }
 
@@ -280,15 +290,6 @@
         .home-box-2 {
             height: 25%;
             margin: $m6 $m0;
-        }
-        .home-box-3 {
-            height: 50vh;
-        }
-        .home-box-4 {
-            height: 50vh;
-        }
-        .home-box-5 {
-            height: 20vh;
         }
         /*home slider - start*/
         .slides_img {

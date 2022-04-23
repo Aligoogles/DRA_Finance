@@ -1,5 +1,6 @@
 /* created Aelita  21113131*/
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './Home.scss';
 import '../Main-styles.scss'
 import Header from '../../components/header/Header'
@@ -23,6 +24,7 @@ function Home () {
 
             <div className="home-box-2">
                 <HomeBox2 />
+                <Link className="link-btn" to="/About">Read More</Link>
             </div>
 
             <div className="home-box-3">

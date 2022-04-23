@@ -4,6 +4,17 @@
     margin: $m0 $m2;
 }
 
+button {
+    color: $light;
+    background-color: $dark;
+    padding: 5px 10px;
+    transition: 0.5s ease-in-out;
+}
+button:hover {
+    color: $hover;
+    transform: scale(1.1);
+}
+
 @media screen and (min-width: 916px) {
     p {
         font-size: $font20;
