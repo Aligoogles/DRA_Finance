@@ -1,7 +1,6 @@
 /* created aelita  21113131*/
 
 import { Link } from 'react-router-dom'
-import { SocialIcon } from 'react-social-icons';
 import React from 'react'
 import img from './DRA_Logo_small.webp'
 import './Footer.scss';
