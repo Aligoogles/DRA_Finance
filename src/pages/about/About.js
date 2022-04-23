@@ -23,7 +23,6 @@ function About () {
                 <img src={img1} className="img-about" alt="Staff"/>
                 <img src={img2} className="img-about" alt="Newspaper"/>
                 <img src={img3} className="img-about" alt="Laptop with image of a chart"/>
-
             </div>
             <br />
             <div className="about-box-2">
