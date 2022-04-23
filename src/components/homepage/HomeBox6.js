@@ -7,18 +7,19 @@ import '../../pages/Main-styles.scss';
 import '../../pages/Variables.scss';
 import '../../pages/home/Home.scss';
 
-function HomeBox4 () {
+function HomeBox6 () {
 
     
-    const homeInfo = data[3]
+    const homeInfo = data[4]
+    const homeInfo1 = data[5] 
 
 
     return (
         <div className="individualBlock">
-            <Details info={homeInfo}/>
-           
+            <Details info={homeInfo}/>  
+            <Details info={homeInfo1}/>  
        </div>
     )
 }
 
-export default HomeBox4;
+export default HomeBox6;

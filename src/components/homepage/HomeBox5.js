@@ -6,11 +6,11 @@ import data from '../../info.json';
 
 function HomeBox5 () {
 
-    const homeBox5Info = data[1]
+    const homeInfo = data[1]
 
     return (
         <div className="individualBlock">
-            <Details info={homeBox5Info}/>
+            <Details info={homeInfo}/>
         </div>
     )
 }

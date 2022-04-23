@@ -1,26 +1,23 @@
 
 [
     {
-        "name": "Welcome to DRA_Finance",
-        "desc": "We are happy to help you find whatever you are looking for in the finance sector."
+        "name": "Who is DRA_Finance",
+        "subName": "Here you can find the latest financial information.",
+        "desc": "Use the search bar to search latest currencies or stock markets.",
+        "desc1": "Also if you want to find out more about what we do and who we are then just click the button below."
     },
     {
-       "name": "Stock",
-       "subName": "Checkout what are the current rates.",
+        "name": "Forex",
+        "desc": "Find the latest financial information here.",
+        "desc1": "Navigate to our Dataset page by clicking the button below. Also figures updated daily."
+    },
+    {
+       "name": "Stock Markets",
        "desc": "Variable rates 6.8% to 8.5% APR1. Loans from €2,000 - €65,000. Loan terms from 1 to 5 years. Clear your loan early and pay less interest"
     },
-
-    {
-        "name": "Market?",
-        "subName": "Checkout what are the current rates.",
-        "desc": "Variable rates 6.8% to 8.5% APR1. Loans from €2,000 - €65,000. Loan terms from 1 to 5 years. Clear your loan early and pay less interest"
-    },
    {
-        "name": "Need a Loan in Ireland?",
-        "subName": "Checkout what are the current rates.",
-        "desc": "Variable rates 6.8% to 8.5% APR1. Loans from €2,000 - €65,000. Loan terms from 1 to 5 years. Clear your loan early and pay less interest",
-        "desc1": " Other personal Loan interest rates provided by different banks are as follows",
-        "desc2": [
+        "name": "Loan Rates in Ireland",
+        "desc": [
             "Avant Money 6.1%",
             "KBC 6.3%",
             "BOI 6.8%",
@@ -31,6 +28,17 @@
             "Revolute 5.9%",
             "An Post 5.9%"
         ]
+    },
+    {
+        "name": "Helpful links to see the current stock markets, trading online and much more. ",
+        "desc": "https://www.forex.com/ie/",
+        "desc1": " https://money.cnn.com/data/markets/",
+        "desc2": "https://finance.yahoo.com/"
+    },
+    {
+        "desc": "https://www.marketwatch.com/markets",
+        "desc1": " https://money.cnn.com/data/markets/",
+        "desc2": "https://finance.yahoo.com/"
     },
     {
         "name": "About us",

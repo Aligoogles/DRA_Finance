@@ -1,9 +1,11 @@
 /* created aelita  21113131*/
 
 import { Link } from 'react-router-dom'
+import { SocialIcon } from 'react-social-icons';
 import React from 'react'
 import img from './DRA_Logo_small.webp'
 import './Footer.scss';
+import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 
 function Footer () {
 
@@ -17,6 +19,7 @@ function Footer () {
                         <img alt="small-logo" src={img} />
                     </Link>
                 </div>
+
 
                 {/* column 2*/}
                 <div className="footer-col-2">
@@ -36,6 +39,28 @@ function Footer () {
 
                 {/* column 3*/}
                 <div className="footer-col-3">
+
+                    <ul className="footer-contact">
+                        <li>
+                            <FaFacebook
+                            color="#ffffff"
+                            size="20px" />
+                        </li>
+                        <li>
+                            <FaInstagram
+                            color="#ffffff"
+                            size="20px" />
+                        </li>
+                        <li>
+                            <FaTwitter
+                            color="#ffffff"
+                            size="20px" />
+                        </li>
+                    </ul>
+                </div>
+
+                {/* column 4*/}
+                <div className="footer-col-4">
                     
                     <ul className="footer-contact">
                         <li>+353-861234567</li>
