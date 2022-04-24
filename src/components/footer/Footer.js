@@ -39,7 +39,7 @@ function Footer () {
                 {/* column 3*/}
                 <div className="footer-col-3">
 
-                    <ul className="footer-contact">
+                    <ul className="footer-socials">
                         <li>
                             <FaFacebook
                             color="#ffffff"

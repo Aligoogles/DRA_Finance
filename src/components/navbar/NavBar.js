@@ -5,22 +5,24 @@ import {useState} from 'react'
 import { Link } from 'react-router-dom'
 import {Close, MenuOutlined} from '@material-ui/icons'
 import './NavBar.scss';
-import img from './DRA_Logo_transparent.webp'
+import img from './DRA_Logo_transparent.webp';
+import Search from './Search';
 
 
-function NavBar () {
+function NavBar (props) {
 
     const [active, setActive] = useState(false);
-
+    
     function showMenu (e) {
         e.preventDefault()
         setActive(!active)
-    }
+    };
 
+    
     return (
         <div className="navContainer" >
             <div className="logo">
-                <Link to='/' >
+                <Link to='/'>
                     <img src={img} alt="logo" />
                 </Link>
             </div>
@@ -56,12 +58,8 @@ function NavBar () {
 
                 </ul>
 
-                <div className="search-bar" >
-                    <input  type="text" value={""} placeholder="Start your search..." />
-
-                    <Link to="/" >
-                    <button className="search-btn"> search</button>
-                    </Link>
+                <div >
+                    <Search info={props.info}/>
                 </div>
 
             </nav>

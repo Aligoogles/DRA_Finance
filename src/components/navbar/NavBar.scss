@@ -29,10 +29,10 @@
     }
     
     .search-bar {
-        margin: $m2 $m0 $m0 30%; 
+        margin: $m2 $m0 $m0 $m20; 
     
         input{
-            padding: $m2 $m20 $m2 $m4;
+            padding: $m4 $m20 $m2 $m4;
             margin-right: $m2;
             color: $dark;
             background-color: $light;

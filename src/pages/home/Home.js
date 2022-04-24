@@ -15,6 +15,7 @@ import HomeBox6 from '../../components/homepage/HomeBox6'
 
 function Home () {
 
+
     return (
     <div className="box">
         <div className="homepage">

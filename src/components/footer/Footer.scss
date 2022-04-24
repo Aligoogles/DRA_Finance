@@ -27,6 +27,13 @@ hr {
             font-size: $font18;
             font-weight: $regular;
         }
+
+        .footer-socials {
+            display: flex;
+            list-style: none;
+            font-size: $font18;
+            font-weight: $regular;
+        }
  
         .footer-col-1 {
 
@@ -48,7 +55,7 @@ hr {
         }
 
         .footer-col-2 li a:hover {
-            color: $hover;  
+            color: $hover;
         }
 
         .footer-col-3 {
