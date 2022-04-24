@@ -11,6 +11,7 @@ function Details (props) {
            <p className="desc">{props.info.desc}</p>
            <p className="desc1">{props.info.desc1}</p>
            <p className="desc2">{props.info.desc2}</p>
+           <p className="desc3">{props.info.desc3}</p>
         </div>
     )
 }
