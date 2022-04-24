@@ -85,6 +85,31 @@ function HomeBox6 () {
                 <button className="home-btn" >
                 <a href="https://www.forexchurch.com/stock-market-hours">www.forexchurch.com</a>
                 </button>
+
+                <button className="home-btn" >
+                <a href="https://www.google.com/finance/">www.google.com</a>
+                </button>
+
+                <button className="home-btn" >
+                <a href="https://www.nasdaq.com/">www.nasdaq.com</a>
+                </button>
+
+                <button className="home-btn" >
+                <a href="https://markets.businessinsider.com/indices/us-stock-markets?op=1">markets.businessinsider.com</a>
+                </button>
+
+                <button className="home-btn" >
+                <a href="https://www.forbes.com/advisor/investing/stock-market-outlook-and-forecast/">www.forbes.com/</a>
+                </button>
+
+                <button className="home-btn" >
+                <a href="https://www.wsj.com/market-data/stocks">www.wsj.com</a>
+                </button>
+
+                <button className="home-btn" >
+                <a href="https://www.londonstockexchange.com/">www.londonstockexchange.com</a>
+                </button>
+
             </div>
             
        </div>
