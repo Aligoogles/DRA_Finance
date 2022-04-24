@@ -1,0 +1,28 @@
+/* created Aelita  21113131*/
+
+@import "../../pages/Variables.scss";
+@import "../../pages/Main-styles.scss";
+
+.individualBlock6 {
+    padding: $m4;
+}
+.forex-home img {
+    height: $percent60;
+    width: $percent75;
+    margin: $m0 $m10;
+    border: solid 5px #000000;
+}
+
+.forex-home button {
+    width: $percent60;
+    margin: $m2 $m20 $m8 $m20;
+}
+
+.other-links {
+    display: flex;
+    flex-wrap: wrap;
+    margin: $m0 $m8;
+}
+.other-links button {
+    margin: $m2 $m2;
+}

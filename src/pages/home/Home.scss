@@ -36,12 +36,12 @@
         display: flex;
         background-color: $light;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-evenly;
         float: left;
     }
 
     .home-box-2 {
-        width: 30%;
+        width: $percent50;
         min-height: 40vh;
         display: flex;
         background-color: $light;
@@ -75,6 +75,7 @@
         float: right;
         justify-content: space-around;
         margin: $m5 $m0;
+        padding-bottom: $m4;
 
         p {
             text-align: center;
@@ -102,6 +103,7 @@
         flex-direction: column;
         float: left;
         margin: $m5 $m4 $m5 $m0;
+        padding-bottom: $m4;
 
         p {
             text-align: center;
@@ -128,6 +130,7 @@
         float: left;
         justify-content: space-around;
         margin: $m5 $m0 $m5 $m4;
+        padding-bottom: $m2;
 
         p {
             text-align: center;

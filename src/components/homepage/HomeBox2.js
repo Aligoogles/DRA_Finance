@@ -3,6 +3,7 @@
 import React from 'react'
 import Details from '../../components/homepage/Details'
 import data from '../../info.json';
+import './HomeBoxStyles.scss';
 
 function HomeBox2 () {
 

@@ -1,9 +1,8 @@
-
 [
     {
         "name": "Who is DRA_Finance",
-        "subName": "Here you can find the latest financial information.",
-        "desc": "Use the search bar to search latest currencies or stock markets.",
+        "subName": "This website was created to help you find the latest financial news around the world.",
+        "desc": "Use the search bar to search latest currencies, stock markets, cryptocurrencies etc.",
         "desc1": "Also if you want to find out more about what we do and who we are then just click the button below."
     },
     {
@@ -13,16 +12,16 @@
     },
     {
        "name": "Stock Markets",
-       "desc": "Variable rates 6.8% to 8.5% APR1. Loans from €2,000 - €65,000. Loan terms from 1 to 5 years. Clear your loan early and pay less interest"
+       "subName": "What’s next for the stock market!",
+       "desc": "The Federal Reserve has ramped up its hawkish tone, rattling the U.S. stock market... "
     },
    {
         "name": "Loan Rates in Ireland",
-        "desc": [
-            "Avant Money 6.1%",
+        "desc": "Most common Financial institutions loan rates",
+        "desc1": [
             "KBC 6.3%",
             "BOI 6.8%",
             "Ulster Bank 7.9%",
-            "Chill Money 8.9%",
             "AIB 9%",
             "PTSB 10.5%",
             "Revolute 5.9%",
@@ -30,15 +29,10 @@
         ]
     },
     {
-        "name": "Helpful links to see the current stock markets, trading online and much more. ",
-        "desc": "https://www.forex.com/ie/",
-        "desc1": " https://money.cnn.com/data/markets/",
-        "desc2": "https://finance.yahoo.com/"
+        "name": "Helpful links to see the current stock markets, trading online and much more. "
     },
     {
-        "desc": "https://www.marketwatch.com/markets",
-        "desc1": " https://money.cnn.com/data/markets/",
-        "desc2": "https://finance.yahoo.com/"
+        "subName": ">>> Click on the buttons below to bring you to external site. <<<"
     },
     {
         "name": "About us",

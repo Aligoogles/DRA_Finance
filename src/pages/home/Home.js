@@ -31,8 +31,9 @@ function Home () {
             <div className="home-box-3">
                 <HomeBox3 />
                 <button className="home-btn" >
-                    <a href="https://www.marketwatch.com/markets">More info</a>
+                    <a href="https://www.marketwatch.com/markets">Read more</a>
                 </button>
+                
             </div>
 
             <div className="home-box-4">

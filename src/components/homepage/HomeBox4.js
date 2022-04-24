@@ -6,6 +6,7 @@ import data from '../../info.json';
 import '../../pages/Main-styles.scss';
 import '../../pages/Variables.scss';
 import '../../pages/home/Home.scss';
+import './HomeBoxStyles.scss';
 
 function HomeBox4 () {
 
@@ -14,7 +15,7 @@ function HomeBox4 () {
 
 
     return (
-        <div className="individualBlock">
+        <div className="individualBlock6">
             <Details info={homeInfo}/>
            
        </div>

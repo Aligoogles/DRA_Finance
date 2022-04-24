@@ -25,14 +25,12 @@ const SliderData = [
     },
     {
         urls: './sliderImages/slide8.jpg',
-        title: 'We are happy to help',
     },
     {
         urls: './sliderImages/slide9.jpg',
     },
     {
         urls: './sliderImages/slide10.jpg',
-        title: 'DRA_FINANCE',
     },
 ];
 
