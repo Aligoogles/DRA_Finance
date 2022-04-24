@@ -240,7 +240,7 @@
     .homepage{
 
         .home-box-2 {
-            width: $percent30;
+            width: $percent40;
             margin: 7% $m0;
             padding: $m0 1%;
 
@@ -278,30 +278,30 @@
     .homepage{
 
         .home-box-1 {
-            width: 65%;
-            height: 40vh;
+            width: $percent100;
+            min-height: 40vh;
         }
 
         .home-box-2 {
-            height: 25%;
+            min-height: 55%;
             margin: $m8 $m0;
         }
 
         .home-box-3 {
             width: $percent40;
-            height: 50vh;
+            min-height: 30vh;
             margin: $m5 $m4;
         }
 
         .home-box-4 {
             width: $percent40;
-            height: 50vh;
+            min-height: 30vh;
             margin: $m5 $m4;
         }
 
         .home-box-5 {
             width: $percent90;
-            height: 20vh;
+            min-height: 20vh;
             margin: $m5 $m4;
         }
 
@@ -322,18 +322,10 @@
     .homepage{
 
         .home-box-2 {
-            height: 25%;
+            
             margin: $m6 $m0;
         }
-        .home-box-3 {
-            height: 50vh;
-        }
-        .home-box-4 {
-            height: 50vh;
-        }
-        .home-box-5 {
-            height: 20vh;
-        }
+
         /*home slider - start*/
         .slides_img {
             height: 23vh;
@@ -346,13 +338,7 @@
 
     .homepage{
 
-        .home-box-1 {
-            width: $percent60;
-        }
-
         .home-box-2 {
-            height: 27%;
-            margin: $m6 $m0;
 
             p {
                 margin-top: $m0;
@@ -397,13 +383,11 @@
 
         .home-box-1 {
             width: $percent90;
-            height: $percent50;
             margin: $m5 $m4;
         }
 
         .home-box-2 {
             width: $percent90;
-            height: $percent20;
             margin: $m5 $m4;
         }
 
