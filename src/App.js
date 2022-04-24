@@ -12,27 +12,28 @@ import Contact from './pages/contact/Contact'
 
 function App() {
 
+  /* created Aelita  21113131*/
+  /* For search bar to pull the two websites that are being pulled from API. This code was somewhat taken from Dataset page*/
   const [data, setData] = useState(null);
 
   useEffect(() => {
-      fetch(`https://finnhub.io/api/v1/news?category=forex&minId=10&token=c98ml9iad3ibrc52qf20`)
-          .then((response) => {
-              if (!response.ok) {
-                  throw new Error(
-                    `This is an HTTP error: The status is ${response.status}`
-                  );
-              }
-              return response.json();
-          })
-          .then((actualData) => {
-            setData(actualData);
-          })
-          .catch((err) => {
-            setData(null);
-          })
-
-
-  }, []);
+    fetch(`https://finnhub.io/api/v1/news?category=forex&minId=10&token=c98ml9iad3ibrc52qf20`)
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(
+            `This is an HTTP error: The status is ${response.status}`
+          );
+        }
+        return response.json();
+      })
+      .then((actualData) => {
+        setData(actualData);
+      })
+      .catch((err) => {
+        setData(null);
+      })
+    }, 
+  []);
 
 
 
@@ -41,27 +42,26 @@ function App() {
     <div className="page-container">
       <div className="content-wrap">
 
+        <NavBar info={data} />
 
-          <NavBar info={data} />
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
 
-          <Switch>
-            <Route exact path="/">
-              <Home />
-            </Route>
+          <Route path="/About">
+            <About />
+          </Route>
 
-            <Route path="/About">
-              <About />
-            </Route>
+          <Route path="/Dataset">
+            <Dataset />
+          </Route>
 
-            <Route path="/Dataset">
-              <Dataset />
-            </Route>
+          <Route path="/Contact">
+            <Contact />
+          </Route>
 
-            <Route path="/Contact">
-              <Contact />
-            </Route>
-
-          </Switch>
+        </Switch>
 
       </div>
       <div className="footer">
